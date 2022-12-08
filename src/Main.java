@@ -1,7 +1,14 @@
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
+    public static void main(String[] args) throws Exception {
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println(calc(scanner.nextLine()));
+        }
+    }
     public static String calc(String input) throws Exception {
         String[] array = input.split(" ");
         if (array.length != 3) {
